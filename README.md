@@ -64,8 +64,6 @@ Open `http://localhost:8080` and click **Login**.
 ## Related Samples
 
 - [okta-spring-boot-api](https://github.com/okta-samples/okta-spring-boot-api) — a standalone, token-protected API sample. It runs independently of this app and isn't called by it.
-- [okta-spring-boot-sample](https://github.com/okta-samples/okta-spring-boot-sample) — app and API combined in a single project.
-
 ## Learn More
 
 - [Okta Spring Boot Starter](https://github.com/okta/okta-spring-boot)
