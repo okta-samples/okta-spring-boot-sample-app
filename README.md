@@ -4,7 +4,7 @@ This example shows you how to use the [Okta Spring Boot Starter][] to sign users
 
 ## Prerequisites
 
-- [Java 17+](https://sdkman.io/jdks)
+- [Java 25+](https://sdkman.io/jdks)
 - An Okta Integrator Free Plan account — sign up at [developer.okta.com](https://developer.okta.com/login)
 
 ## Create an Okta App Integration
