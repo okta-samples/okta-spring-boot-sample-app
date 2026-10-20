@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Messages</title>
+  <!--/*/ <th:block th:insert="~{head :: head}"/> /*/-->
+</head>
+<body id="samples">
+<div th:replace="~{menu :: menu}"></div>
+
+<div id="content" class="container">
+  <h2>Messages</h2>
+  <p>This page calls the protected API (<code>/api/messages</code>) from the server, sending your access token as a
+    <code>Bearer</code> token. The API only accepts tokens that include the <code>messages.read</code> scope.</p>
+
+  <div id="error" class="alert alert-danger" th:if="${error}" th:text="${error}">Error</div>
+
+  <div th:if="${response}">
+    <p>Owner: <span id="owner" th:text="${response['owner']}">user</span></p>
+    <ul id="messages">
+      <li th:each="message : ${response['messages']}" th:text="${message}">Message</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

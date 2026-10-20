@@ -17,6 +17,10 @@
           <a id="profile-button" class="nav-link" th:href="@{/profile}"
              th:if="${#authorization.expression('isAuthenticated()')}">My Profile</a>
         </li>
+        <li class="nav-item">
+          <a id="messages-button" class="nav-link" th:href="@{/messages}"
+             th:if="${#authorization.expression('isAuthenticated()')}">Messages</a>
+        </li>
       </ul>
       <form method="post" th:action="@{/logout}" th:if="${#authorization.expression('isAuthenticated()')}"
             class="d-flex" style="margin-block-end: inherit">
